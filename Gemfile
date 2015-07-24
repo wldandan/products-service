@@ -1,4 +1,4 @@
-source 'http://ruby.taobao.org'  #选择使用淘宝的Gems镜像库
+source 'https://rubygems.org'
 gem 'grape'
 gem 'rake'
 
