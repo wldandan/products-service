@@ -1,0 +1,10 @@
+before_install:
+  - echo 'before install'
+install:
+  - echo 'install'
+before_deploy:
+  - echo 'before deploy'
+deploy:
+  - echo 'deploy'
+after_deploy:
+  - echo 'after deploy'
