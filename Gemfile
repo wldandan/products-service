@@ -1,5 +1,4 @@
 source 'http://ruby.taobao.org'
-gem 'bundler'
 gem 'grape'
 gem 'rake'
 
