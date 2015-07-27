@@ -9,7 +9,7 @@ describe API do
 
   describe 'get' do
     before do
-      get("/")
+      get('/')
     end
 
     it 'should return Hello world' do
@@ -17,7 +17,7 @@ describe API do
     end
 
     it 'should return json format' do
-      expect(last_response.content_type).to eq "application/json"
+      expect(last_response.content_type).to eq 'application/json'
     end
   end
 end
