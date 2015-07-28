@@ -1,14 +1,16 @@
 #! /bin/bash
 set -e
 
-DOCKER_REGISTRY_USER_NAME="wldandan"
-APP_NAME="products-service"
-APP_VERSION="latest"
+if [ -z "$1" ] ; then echo "Usage: Specify deployment file"; fi
 
-FULL_TAG=$DOCKER_REGISTRY_USER_NAME/$APP_NAME:$APP_VERSION
+# parse configuration from environment specific file
+echo  "Parsing config file $1 ..."
 
-echo "Pulling Docker image from Registry"
-docker pull $FULL_TAG
+# Create resources
+echo "Creating resources ..."
 
-echo "Launching Dokcer Container"
-docker run -d -p 80:8080 --name product-service $FULL_TAG
+# Pull docker image in the instance created
+echo "Pulling docker image ..."
+
+# Run docker container in the instance created
+echo "Runing docker container ..."

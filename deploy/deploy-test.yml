@@ -1,0 +1,23 @@
+app:
+  name: products-service
+docker:
+  image: wldandan/products-service:latest
+aws:
+  vpc: vpc-xxxx
+  region: xxxx
+
+  tags:
+    name: products-service
+
+  instances:
+    type: t2.micro
+    key_pair: products-service
+    min: 1
+    max: 2
+    subnets:
+    - subnet-xxx
+splunk:
+  host: splunk-test-xxx
+  index: products-service
+nagios:
+  host: nagios-test-xxx
