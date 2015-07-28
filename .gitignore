@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+coverage
+
+*.swp
+*.swo
+*.swn
+*~
+*.swk
+*.swm
+*.swl
+
+tags

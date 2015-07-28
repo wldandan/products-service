@@ -1,5 +1,5 @@
 #! /bin/bash
 set -e
 
-if [ -z "$1" ] ; then echo "Usage: Specify environment"; fi
+[[ -z "$1" ]] && echo "Usage: Please Specify environment !!!" && exit 1
 ./deploy/deploy.sh "deploy/deploy-$1.yml"

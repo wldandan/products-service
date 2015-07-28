@@ -1,7 +1,7 @@
 #! /bin/bash
 set -e
 
-if [ -z "$1" ] ; then echo "Usage: Specify deployment file"; fi
+[[ -z "$1" ]] && echo "Usage: Please Specify deployment file !!!" && exit 1
 
 # parse configuration from environment specific file
 echo  "Parsing config file $1 ..."
