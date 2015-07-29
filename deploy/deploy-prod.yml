@@ -1,7 +1,9 @@
 app:
   name: products-service
+
 docker:
   image: wldandan/products-service:latest
+
 aws:
   vpc: vpc-xxxx
   region: xxxx
@@ -14,10 +16,12 @@ aws:
     key_pair: products-service
     min: 1
     max: 2
-    subnets:
-    - subnet-xxx
+
+    subnets: subnet-xxx
+
 splunk:
   host: splunk-prod-xxx
   index: products-service
+
 nagios:
   host: nagios-prod-xxx
