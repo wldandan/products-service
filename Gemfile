@@ -10,6 +10,7 @@ gem 'grape-roar'
 group :development, :test do
   gem 'rspec'
   gem 'rspec-its'
+  gem 'pact'
   gem 'byebug'
   gem 'cane'
   gem 'rubocop'

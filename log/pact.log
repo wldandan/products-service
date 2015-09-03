@@ -1,0 +1,6 @@
+# Logfile created on 2015-09-03 13:03:59 +0800 by logger.rb/44203
+I, [2015-09-03T13:03:59.944832 #68297]  INFO -- : Running example 'Verifying a pact between Contracts Service and Products Service Given products exist a request for all products with GET /products returns a response which has status code 200'
+I, [2015-09-03T13:03:59.944966 #68297]  INFO -- : Sending GET request to path: "/products" with headers: {}, see debug logs for body
+D, [2015-09-03T13:03:59.944989 #68297] DEBUG -- : body :
+I, [2015-09-03T13:04:00.057409 #68297]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/hal+json", "Content-Length"=>"314"}, see debug logs for body
+D, [2015-09-03T13:04:00.057479 #68297] DEBUG -- : body: {"_links":{"self":{"href":"http://example.org/products"}},"count":2,"_embedded":{"products":[{"id":1,"name":"Docker In Action","price":"59.00","_links":{"self":{"href":"http://example.org/products/1"}}},{"id":2,"name":"Agile In Action","price":"55.00","_links":{"self":{"href":"http://example.org/products/2"}}}]}}
