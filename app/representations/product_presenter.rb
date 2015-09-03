@@ -8,9 +8,5 @@ class ProductPresenter < Roar::Decorator
   property :name
   property :price, getter: lambda { |_| '%.2f' % price }
 
-
-  link :self do |opts, endpoint = opts[:env]['api.endpoint']|
-    "#{endpoint.self_link}/#{represented.id}"
-  end
 end
 

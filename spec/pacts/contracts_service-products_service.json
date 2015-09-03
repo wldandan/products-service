@@ -16,18 +16,22 @@
       "response": {
         "status": 200,
         "headers": {
-          "Content-Type": "application/json"
+          "Content-Type": "application/hal+json"
         },
-        "body": [
-          {
-            "name": "Docker In Action",
-            "price": 59.0
-          },
-          {
-            "name": "Agile In Action",
-            "price": 55.0
-          }
-        ]
+        "body": {
+          "products": [
+            {
+              "id": 1,
+              "name": "Docker In Action",
+              "price": "59.00"
+            },
+            {
+              "id": 2,
+              "name": "Agile In Action",
+              "price": "55.00"
+            }
+          ]
+        }
       }
     }
   ],

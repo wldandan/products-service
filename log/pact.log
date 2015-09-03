@@ -4,3 +4,43 @@ I, [2015-09-03T13:03:59.944966 #68297]  INFO -- : Sending GET request to path: "
 D, [2015-09-03T13:03:59.944989 #68297] DEBUG -- : body :
 I, [2015-09-03T13:04:00.057409 #68297]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/hal+json", "Content-Length"=>"314"}, see debug logs for body
 D, [2015-09-03T13:04:00.057479 #68297] DEBUG -- : body: {"_links":{"self":{"href":"http://example.org/products"}},"count":2,"_embedded":{"products":[{"id":1,"name":"Docker In Action","price":"59.00","_links":{"self":{"href":"http://example.org/products/1"}}},{"id":2,"name":"Agile In Action","price":"55.00","_links":{"self":{"href":"http://example.org/products/2"}}}]}}
+I, [2015-09-03T13:26:42.787267 #74117]  INFO -- : Running example 'Verifying a pact between Contracts Service and Products Service Given products exist a request for all products with GET /products returns a response which has status code 200'
+I, [2015-09-03T13:26:42.787451 #74117]  INFO -- : Sending GET request to path: "/products" with headers: {}, see debug logs for body
+D, [2015-09-03T13:26:42.787474 #74117] DEBUG -- : body :
+I, [2015-09-03T13:26:42.908826 #74117]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/hal+json", "Content-Length"=>"115"}, see debug logs for body
+D, [2015-09-03T13:26:42.908877 #74117] DEBUG -- : body: {"products":[{"id":1,"name":"Docker In Action","price":"59.00"},{"id":2,"name":"Agile In Action","price":"55.00"}]}
+I, [2015-09-03T13:29:26.706690 #76050]  INFO -- : Running example 'Verifying a pact between Contracts Service and Products Service Given products exist a request for all products with GET /products returns a response which has status code 200'
+I, [2015-09-03T13:29:26.706959 #76050]  INFO -- : Sending GET request to path: "/products" with headers: {}, see debug logs for body
+D, [2015-09-03T13:29:26.707005 #76050] DEBUG -- : body :
+I, [2015-09-03T13:29:26.817952 #76050]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/hal+json", "Content-Length"=>"115"}, see debug logs for body
+D, [2015-09-03T13:29:26.818000 #76050] DEBUG -- : body: {"products":[{"id":1,"name":"Docker In Action","price":"59.00"},{"id":2,"name":"Agile In Action","price":"55.00"}]}
+I, [2015-09-03T13:33:11.350688 #76405]  INFO -- : Running example 'Verifying a pact between Contracts Service and Products Service Given products exist a request for all products with GET /products returns a response which has status code 200'
+I, [2015-09-03T13:33:11.350872 #76405]  INFO -- : Sending GET request to path: "/products" with headers: {}, see debug logs for body
+D, [2015-09-03T13:33:11.350908 #76405] DEBUG -- : body :
+I, [2015-09-03T13:33:11.472040 #76405]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/hal+json", "Content-Length"=>"115"}, see debug logs for body
+D, [2015-09-03T13:33:11.472113 #76405] DEBUG -- : body: {"products":[{"id":1,"name":"Docker In Action","price":"59.00"},{"id":2,"name":"Agile In Action","price":"55.00"}]}
+I, [2015-09-03T13:34:00.858083 #76470]  INFO -- : Running example 'Verifying a pact between Contracts Service and Products Service Given products exist a request for all products with GET /products returns a response which has status code 200'
+I, [2015-09-03T13:34:00.858226 #76470]  INFO -- : Sending GET request to path: "/products" with headers: {}, see debug logs for body
+D, [2015-09-03T13:34:00.858271 #76470] DEBUG -- : body :
+I, [2015-09-03T13:34:00.965166 #76470]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/hal+json", "Content-Length"=>"117"}, see debug logs for body
+D, [2015-09-03T13:34:00.965222 #76470] DEBUG -- : body: {"products":[{"id":1,"name":"Docker In Action","price":"0.59E2"},{"id":2,"name":"Agile In Action","price":"0.55E2"}]}
+I, [2015-09-03T13:34:15.243824 #76528]  INFO -- : Running example 'Verifying a pact between Contracts Service and Products Service Given products exist a request for all products with GET /products returns a response which has status code 200'
+I, [2015-09-03T13:34:15.243951 #76528]  INFO -- : Sending GET request to path: "/products" with headers: {}, see debug logs for body
+D, [2015-09-03T13:34:15.243974 #76528] DEBUG -- : body :
+I, [2015-09-03T13:34:15.327385 #76528]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/hal+json", "Content-Length"=>"113"}, see debug logs for body
+D, [2015-09-03T13:34:15.327496 #76528] DEBUG -- : body: {"products":[{"id":1,"name":"Docker In Action","price":"59.0"},{"id":2,"name":"Agile In Action","price":"55.0"}]}
+I, [2015-09-03T13:35:44.777361 #76699]  INFO -- : Running example 'Verifying a pact between Contracts Service and Products Service Given products exist a request for all products with GET /products returns a response which has status code 200'
+I, [2015-09-03T13:35:44.777494 #76699]  INFO -- : Sending GET request to path: "/products" with headers: {}, see debug logs for body
+D, [2015-09-03T13:35:44.777518 #76699] DEBUG -- : body :
+I, [2015-09-03T13:35:44.890919 #76699]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/hal+json", "Content-Length"=>"113"}, see debug logs for body
+D, [2015-09-03T13:35:44.890970 #76699] DEBUG -- : body: {"products":[{"id":1,"name":"Docker In Action","price":"59.0"},{"id":2,"name":"Agile In Action","price":"55.0"}]}
+I, [2015-09-03T13:36:08.545618 #76766]  INFO -- : Running example 'Verifying a pact between Contracts Service and Products Service Given products exist a request for all products with GET /products returns a response which has status code 200'
+I, [2015-09-03T13:36:08.545745 #76766]  INFO -- : Sending GET request to path: "/products" with headers: {}, see debug logs for body
+D, [2015-09-03T13:36:08.545772 #76766] DEBUG -- : body :
+I, [2015-09-03T13:36:08.641199 #76766]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/hal+json", "Content-Length"=>"113"}, see debug logs for body
+D, [2015-09-03T13:36:08.641259 #76766] DEBUG -- : body: {"products":[{"id":1,"name":"Docker In Action","price":"59.0"},{"id":2,"name":"Agile In Action","price":"55.0"}]}
+I, [2015-09-03T13:36:38.847231 #76825]  INFO -- : Running example 'Verifying a pact between Contracts Service and Products Service Given products exist a request for all products with GET /products returns a response which has status code 200'
+I, [2015-09-03T13:36:38.847368 #76825]  INFO -- : Sending GET request to path: "/products" with headers: {}, see debug logs for body
+D, [2015-09-03T13:36:38.847394 #76825] DEBUG -- : body :
+I, [2015-09-03T13:36:38.936977 #76825]  INFO -- : Received response with status: 200, headers: {"Content-Type"=>"application/hal+json", "Content-Length"=>"115"}, see debug logs for body
+D, [2015-09-03T13:36:38.937030 #76825] DEBUG -- : body: {"products":[{"id":1,"name":"Docker In Action","price":"59.00"},{"id":2,"name":"Agile In Action","price":"55.00"}]}
