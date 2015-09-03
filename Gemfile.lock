@@ -25,6 +25,7 @@ GEM
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.2.5)
+    docile (1.1.5)
     equalizer (0.0.11)
     grape (0.12.0)
       activesupport
@@ -36,6 +37,9 @@ GEM
       rack-accept
       rack-mount
       virtus (>= 1.0.0)
+    grape-roar (0.3.0)
+      grape
+      roar (>= 1.0)
     hashie (3.4.2)
     i18n (0.7.0)
     ice_nine (0.11.1)
@@ -56,6 +60,10 @@ GEM
       rack (>= 1.0)
     rainbow (2.0.0)
     rake (10.4.2)
+    representable (2.3.0)
+      uber (~> 0.0.7)
+    roar (1.0.1)
+      representable (>= 2.0.1, <= 3.0.0)
     rspec (3.3.0)
       rspec-core (~> 3.3.0)
       rspec-expectations (~> 3.3.0)
@@ -79,9 +87,15 @@ GEM
       rainbow (>= 1.99.1, < 3.0)
       ruby-progressbar (~> 1.4)
     ruby-progressbar (1.7.5)
+    simplecov (0.10.0)
+      docile (~> 1.1.0)
+      json (~> 1.8)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    uber (0.0.14)
     virtus (1.0.5)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -95,11 +109,15 @@ DEPENDENCIES
   byebug
   cane
   grape
+  grape-roar
   rack-test
   rake
+  roar
   rspec
   rspec-its
   rubocop
+  simplecov
+  virtus
 
 BUNDLED WITH
    1.10.6

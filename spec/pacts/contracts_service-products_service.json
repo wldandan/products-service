@@ -1,0 +1,37 @@
+{
+  "consumer": {
+    "name": "Contracts Service"
+  },
+  "provider": {
+    "name": "Products Service"
+  },
+  "interactions": [
+    {
+      "description": "a request for all products",
+      "provider_state": "products exist",
+      "request": {
+        "method": "get",
+        "path": "/products"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": [
+          {
+            "name": "Docker In Action",
+            "price": 59.0
+          },
+          {
+            "name": "Agile In Action",
+            "price": 55.0
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecificationVersion": "1.0.0"
+  }
+}
