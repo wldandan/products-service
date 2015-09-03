@@ -20,4 +20,17 @@ class ProductApi < Grape::API
   get '/' do
     ProductsPresenter.new(ProductRepository.list)
   end
+
+  route_param :id do
+
+    params do
+      requires :id,       type: Integer, allow_blank: false
+    end
+
+    desc 'return one product by id'
+    get do
+      ProductPresenter.new(ProductRepository.find(params[:id]))
+    end
+  end
+
 end

@@ -1,15 +1,21 @@
 class ProductRepository
+  @@products = [
+      Product.new({id: 1,
+                   name: 'Docker In Action',
+                   price: 59.0}),
 
-  def self.list()
+      Product.new({id: 2,
+               name: 'Agile In Action',
+               price: 55.0})
+  ]
 
-    product1 = Product.new({id: 1,
-                            name: 'Docker In Action',
-                            price: 59.0})
+  def self.list
+    @@products
+  end
 
-    product2 = Product.new({id: 2,
-                            name: 'Agile In Action',
-                            price: 55.0})
-
-    [product1, product2]
+  def self.find(id)
+    @@products.select do |product|
+        product.id == id
+    end.first
   end
 end
