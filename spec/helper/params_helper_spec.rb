@@ -20,10 +20,10 @@ RSpec.describe ParamsHelper do
     subject { params_helper.self_link }
 
     before do
-      allow(params_helper).to receive(:request)  { double(base_url: 'http://products-service-host', path_info: '/products', params: { product_id: '1' }) }
+      allow(params_helper).to receive(:request)  { double(base_url: 'http://host', path_info: '/products', params: { product_id: '1' }) }
       allow(params_helper).to receive(:declared).and_return(product_id: '1')
     end
 
-    it { is_expected.to eq 'http://products-service-host/products?product_id=1' }
+    it { is_expected.to eq 'http://host/products?product_id=1' }
   end
 end
