@@ -1,12 +1,12 @@
 class ProductRepository
   @@products = [
-      Product.new({id: 1,
-                   name: 'Docker In Action',
-                   price: 59.0}),
+    Product.new(id: 1,
+                name: 'Docker In Action',
+                price: 59.0),
 
-      Product.new({id: 2,
-               name: 'Agile In Action',
-               price: 55.0})
+    Product.new(id: 2,
+                name: 'Agile In Action',
+                price: 55.0)
   ]
 
   def self.list
@@ -14,8 +14,8 @@ class ProductRepository
   end
 
   def self.find(id)
-    @@products.select do |product|
-        product.id == id
-    end.first
+    @@products.find do |product|
+      product.id == id
+    end
   end
 end

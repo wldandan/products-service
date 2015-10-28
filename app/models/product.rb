@@ -4,5 +4,4 @@ class Product
   attribute :id,                  Integer
   attribute :name,                String
   attribute :price,               BigDecimal
-
 end
