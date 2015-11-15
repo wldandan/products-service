@@ -11,8 +11,12 @@ describe ProductApi do
 
     let(:body_hash) { JSON.parse(last_response.body, symbolize_names: true) }
 
-    let(:products)  { [{ id: 1, name: 'Docker In Action', price: '59.00', _links: { self: { href: 'http://example.org/products/1' }}},
-                       { id: 2, name: 'Agile In Action', price: '55.00', _links: { self: { href: 'http://example.org/products/2' }}}] }
+    let(:products) do
+      [
+        { id: 1, name: 'Docker In Action', price: '59.00', _links: { self: { href: 'http://example.org/products/1' } } },
+        { id: 2, name: 'Agile In Action', price: '55.00', _links: { self: { href: 'http://example.org/products/2' } } }
+      ]
+    end
 
     describe 'all products' do
       subject { get '/products' }

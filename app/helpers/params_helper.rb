@@ -1,6 +1,6 @@
 module ParamsHelper
   def path_for(path, query = {})
-    URI::HTTP.build( path:  path, query: query.to_param).request_uri.gsub(/\?$/, '')
+    URI::HTTP.build(path:  path, query: query.to_param).request_uri.gsub(/\?$/, '')
   end
 
   def self_link

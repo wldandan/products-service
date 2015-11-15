@@ -5,7 +5,7 @@ RSpec.describe ParamsHelper do
 
   describe '#path_for' do
     let(:path)  { '/path' }
-    let(:query)  { { param: 'value'} }
+    let(:query)  { { param: 'value' } }
 
     subject { path_for(path, query) }
 
