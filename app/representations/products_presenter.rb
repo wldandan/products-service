@@ -1,6 +1,8 @@
 require 'roar/decorator'
 require 'roar/json'
 require 'roar/json/hal'
+require_relative 'product_presenter'
+
 class ProductsPresenter < Roar::Decorator
   include Roar::JSON
   include Roar::JSON::HAL
