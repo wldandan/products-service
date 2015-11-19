@@ -5,3 +5,5 @@ require 'api'
 require "#{project_root}/app/project_root"
 
 Dir["#{ProductsService.project_root}/app/**/*.rb"].each { |file| require file }
+
+
